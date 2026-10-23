@@ -744,7 +744,34 @@
       font-size: 1.3rem;
     }
 
-    .contact-details {
+        .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .profile-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      min-width: 175px;
+      padding: 0.9rem 1.1rem;
+      border: 1px solid #aaa59e;
+      color: var(--cream);
+      font-weight: 700;
+      transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .profile-button:hover {
+      border-color: var(--coral);
+      color: var(--coral);
+      transform: translateY(-3px);
+    }
+
+
+.contact-details {
       display: flex;
 
       flex-wrap: wrap;
@@ -1762,6 +1789,32 @@
 
         </a>
 
+
+        <div
+  class="profile-links"
+  role="group"
+  aria-label="Professional profiles"
+>
+  <a
+    class="profile-button"
+    href="https://www.linkedin.com/in/eva-plasterer-9b28a6383/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>LinkedIn</span>
+    <span class="arrow" aria-hidden="true">↗</span>
+  </a>
+
+  <a
+    class="profile-button"
+    href="https://fairfield.joinhandshake.com/profiles/qpbv2v"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>Handshake</span>
+    <span class="arrow" aria-hidden="true">↗</span>
+  </a>
+</div>
 
         <div class="contact-details">
 
